@@ -1,10 +1,23 @@
 :root {
-  --logo-color:white;
-  --text-color:#f81b1b;
+  --logo-color: white;
+  --text-color: #f81b1b;
 }
 
 body {
   margin: 0;
+  height: 100vh;
+  /* 100% viewport height */
+  /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+  /*   background: linear-gradient(127deg, #017499),
+  linear-gradient(336deg, #14114A) */
+  background: linear-gradient(60deg, #316474c9, #1a1658c4);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 5000px;
+
+
 }
 
 a {
@@ -16,7 +29,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(71, 71, 70);
+  background-color: rgba(71, 71, 70, 0.479);
   padding: 8px 12px;
 }
 
@@ -165,9 +178,34 @@ input[id="menuicon"]:checked+label+div {
   input[id="menuicon"]+label {
     display: block;
   }
-  
+
   .navbar_menu.active {
     display: flex;
   }
+
+}
+
+/* ///////////////////////////////////////////// */
+
+/* .rectangle-1 {
+  background-color:#d6d6d6;
+  border-radius:14px;
+  width:264px;
+  height:179px;
+
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 1000;
+  /* 헤더가 가장 최상위로 보이게*/
+}
+
+.nav-up {
+  top: -80px;
 
 }
