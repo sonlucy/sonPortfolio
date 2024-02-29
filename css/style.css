@@ -7,18 +7,48 @@ body {
   margin: 0;
   height: 100vh;
   /* 100% viewport height */
-  /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+  background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
   /*   background: linear-gradient(127deg, #017499),
   linear-gradient(336deg, #14114A) */
-  background: linear-gradient(100deg, #72a5b3c9, #1a1658c4);
+  /* background: linear-gradient(100deg, #72a5b3c9, #1a1658c4); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 5000px;
-  /* height: 100%; */
+  height: 3000px;  /************/
+  height: 100%;
+/* 
+  display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+/* main {
+  margin: 0 20px; 
+}
+ */
+
+#main-title {
+  font-size: 3rem;
+  /* color: white; */
+  padding: 100px;
+  font-family: "Black Han Sans",
+  sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
 
+  
+  background: linear-gradient(to right, #ff4444, #c3ff7f, #44a5ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+
+  text-shadow: 3px -3px 3px rgba(204, 202, 202, 0.4);
+  /* text-shadow: 10px 30px 50px rgba(255,255,255,0.3); */
+  /* 텍스트의 내부로 그림자를 표시하도록 설정 */
+  /* text-shadow: inset 10px 50px 50px #ffffff; */
 }
 
 a {
@@ -37,6 +67,17 @@ a {
 .navbar_logo {
   font-size: 24px;
   margin-left: 4%;
+
+  font-family: "Nanum Brush Script",
+  cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.navbar_logo i {
+  color: rgb(255, 255, 255, 0.3);
+
 }
 
 .navbar_menu {
@@ -47,6 +88,11 @@ a {
 
 .navbar_menu li {
   padding: 8px 32px;
+
+  font-family: "Kanit",
+  sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .navbar_menu li:hover {
@@ -188,6 +234,10 @@ input[id="menuicon"]:checked+label+div {
 
 /* ///////////////////////////////////////////// */
 
+main {
+  margin-top: 10vw;
+  /* width: 500px;   */
+}
 /* .rectangle-1 {
   background-color:#d6d6d6;
   border-radius:14px;
@@ -213,7 +263,8 @@ header {
 
 /* ///////////////////////////////////////////////// */
 /* .ellipse-1 {
-  margin: 20vw 10vw;
+  position: relative;
+  margin-left: 5vw;
   width: auto;
   animation: rotate_image 10s linear infinite;
   transform-origin: 50% 50%;
@@ -223,7 +274,18 @@ header {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.rectangle-1 {
+  width: 500px;
+  height: 100px;
+  background-color: wheat;
+  position: absolute; 
+  left: 100px;
+  margin-top: 30px;
+  border-radius: 5px;
 } */
+
 #Archiving a {
   text-decoration: none;
   color: #ffffff;
@@ -238,32 +300,42 @@ footer ul {
 footer {
   background-color: rgba(71, 71, 70, 0.479);
   position: relative;
-  transform: translateY(100%);
+  transform: translateY(100%); /******/
 }
 footer ul {
   display: flex;
 }
 footer ul li {
-
+  text-align: center;
 }
 
 
 /* ////////////////////// */
 #AboutMe {
-  background-color: red;
+  margin: 0 20px;
+  background-color: rgba(255, 0, 0, 0.1);
 }
 
 #Skills {
-  background-color: orange;
+  margin: 0 20px;
+  background-color: rgba(255, 166, 0, 0.1);
 }
 
 #Archiving {
-  background-color: yellow;
+  margin: 0 20px;
+  background-color: rgba(255, 255, 0, 0.1);
 }
 
 #Projects {
-  background-color: green;
+  margin: 0 20px;
+  background-color: rgba(0, 128, 0, 0.1);
+} 
+
+#Intro {
+  margin: 0 20px;
+  background-color: rgba(0, 0, 255, 0.1);
 }
+
 
 /* /////////////////////////////// */
 #Record {
@@ -273,4 +345,121 @@ footer ul li {
   font-size: 10px;
   height: 24px;
   width: auto;
+}
+/* ////////////// */
+
+
+h2 {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.747);
+  text-shadow: 2px 2px 2px #ffffff65;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+#about-me-1 img {
+  /* float:left; */
+  /* align-items: center; */
+  width: 300px;
+}
+
+
+
+
+
+/* 
+* {
+  box-sizing: border-box;
+} */
+
+
+header img {
+  width: 3rem;
+  object-fit: contain;
+}
+
+#tabs {
+  color: #bdd1d4;
+  max-width: 32rem;
+  margin: 2rem auto; /*가운데 정렬 위해 auto */
+  overflow: hidden;
+  /* float: right; */
+}
+
+#tabs menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.25rem;
+}
+
+#tabs button {
+  font: inherit;
+  font-size: 0.85rem;
+  /* background-color: #282f33; */
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-bottom-color: rgb(137, 168, 214);
+  color: #e0eff1;
+  border-radius: 4px 4px 0 0;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  
+}
+
+#tabs button:hover,
+#tabs button.active {
+  background-color: rgb(137, 168, 214, 0.9);
+  color: #273133;
+  /* color: rgba(0, 0, 0, 0.5); */
+}
+
+#tab-content {
+  /* background-color: #2d3942; */
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 0 4px 4px 4px;
+  padding: 1rem;
+  height: 260px;
+  text-align: left; /* 안의 내용 왼쪽 정렬로 */
+}
+
+#tab-content li {
+  margin: 0.75rem 0;
+}
+
+/* /////////////////////////////////////////////////// */
+#about-me-1 {
+  display: flex;
+  /* 요소들을 수평으로 배치하기 위해 flex를 사용합니다. */
+  justify-content: center;
+  /* 요소들을 수평 가운데로 정렬합니다. */
+  align-items: center;
+  /* 요소들을 수직 가운데로 정렬합니다. */
+}
+
+#about-me-1>* {
+  margin: 0 10px;
+  /* 요소들 간의 간격을 조정합니다. */
+} 
+/* ///화면 크기 줄어들면 밑으로 떨어지고, 가운데로 정렬이 되어야함..,그거구현 필요/// */
+
+
+#myImg {
+  max-width: 300px;
+  /* 이미지의 최대 너비를 설정합니다. */
+}
+
+#tabs {
+  flex: 1;
+  /* 남은 공간을 모두 차지하도록 설정합니다. */
+}
+
+/* ////////////////////////////// */
+/* img {
+  opacity: 0;
+} */
+.hideme {
+  opacity: 0;
 }
