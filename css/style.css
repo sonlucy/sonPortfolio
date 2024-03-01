@@ -28,27 +28,36 @@ body {
 }
  */
 
-#main-title {
-  font-size: 3rem;
+#main-title h1 {
+  font-size: 4rem;
   /* color: white; */
   padding: 100px;
   font-family: "Black Han Sans",
   sans-serif;
   font-weight: 400;
   font-style: normal;
-
-
   
   background: linear-gradient(to right, #ff4444, #c3ff7f, #44a5ff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 
-
   text-shadow: 3px -3px 3px rgba(204, 202, 202, 0.4);
-  /* text-shadow: 10px 30px 50px rgba(255,255,255,0.3); */
-  /* 텍스트의 내부로 그림자를 표시하도록 설정 */
-  /* text-shadow: inset 10px 50px 50px #ffffff; */
+
+}
+
+/* #main-title {
+  width: 100%;
+  height: auto;
+  background-color: #2731339a;
+  margin: 300px 0;
+} */
+
+#motto {
+  width: 400px;
+  height: 300px;
+  background-color: #2731339a;
+  margin: 100px auto; /*가운데 배치*/
 }
 
 a {
