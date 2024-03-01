@@ -58,6 +58,42 @@ $(window).scroll(function(){
 });
 */
 
+// ////////////////////////////////////////////////////
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const aboutMeLink = document.querySelector('nav .navbar_menu li:nth-child(1) a');
+
+//   aboutMeLink.addEventListener('click', function (event) {
+//     event.preventDefault(); // 기본 동작 방지
+
+//     const aboutMeSection = document.getElementById('AboutMe');
+//     aboutMeSection.scrollIntoView({
+//       behavior: 'smooth'
+//     }); // 부드러운 스크롤
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuItems = document.querySelectorAll('nav .navbar_menu li a');
+
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      event.preventDefault(); // 기본 동작 방지
+
+      const sectionId = this.getAttribute('href').substring(1); // href 속성에서 #을 제외한 값
+
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        }); // 부드러운 스크롤
+      }
+    });
+  });
+});
+
+
+
 // //////////////////////////////////////////////////
 
 
