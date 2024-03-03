@@ -28,7 +28,14 @@ body {
 }
  */
 
-#main-title h1 {
+.main-title {
+  /* background-image: url("../img/photo-1618005198919-d3d4b5a92ead.jpeg"); */
+  width: auto;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-title h1 {
   font-size: 4rem;
   /* color: white; */
   padding: 100px;
@@ -43,8 +50,9 @@ body {
   color: transparent;
 
   text-shadow: 3px -3px 3px rgba(204, 202, 202, 0.4);
-
 }
+
+
 
 /* #main-title {
   width: 100%;
@@ -238,7 +246,51 @@ input[id="menuicon"]:checked+label+div {
   .navbar_menu.active {
     display: flex;
   }
+  /* //////////////////////////// */
 
+  #about-me-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #about-me-1>div {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+  }
+
+  /* //////////////////////// */
+
+  #archiving-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  #archiving-1>div {
+    margin: 20px;
+    padding: 20px;
+    /* width: 500px; */
+    width: 80%;
+  }
+
+  /* //////////////////////////// */
+
+  #tabs {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .skillsBg-0 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+/*   #tabs {
+    width: 500px;
+  } */
 }
 
 /* ///////////////////////////////////////////// */
@@ -295,11 +347,11 @@ header {
   border-radius: 5px;
 } */
 
-#Archiving a {
+/* #Archiving a {
   text-decoration: none;
   color: #ffffff;
   font-size: 50px;
-}
+} */
 
 footer ul {
   list-style: none;
@@ -322,26 +374,31 @@ footer ul li {
 /* ////////////////////// */
 #AboutMe {
   margin: 0 20px;
+  padding: 50px 0;
   background-color: rgba(255, 0, 0, 0.1);
 }
 
 #Skills {
   margin: 0 20px;
+  padding: 50px 0;
   background-color: rgba(255, 166, 0, 0.1);
 }
 
 #Archiving {
   margin: 0 20px;
+  padding: 50px 0;
   background-color: rgba(255, 255, 0, 0.1);
 }
 
 #Projects {
   margin: 0 20px;
+  padding: 50px 0;
   background-color: rgba(0, 128, 0, 0.1);
 } 
 
 #Intro {
   margin: 0 20px;
+  padding: 50px 0;
   background-color: rgba(0, 0, 255, 0.1);
 }
 
@@ -364,6 +421,32 @@ h2 {
   text-shadow: 2px 2px 2px #ffffff65;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0;
+}
+
+h2:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #ffffff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+h2:hover:after {
+  transform: scaleX(1);
+}
+
+h2.fromRight:after {
+  transform-origin: 100% 50%;
+}
+
+h2.fromLeft:after {
+  transform-origin: 0% 50%;
 }
 
 
@@ -390,10 +473,13 @@ header img {
 
 #tabs {
   color: #bdd1d4;
-  max-width: 32rem;
+  min-width: 300px;
+  max-width: 500px;
   margin: 2rem auto; /*가운데 정렬 위해 auto */
   overflow: hidden;
   /* float: right; */
+  padding-right: 30px;
+  
 }
 
 #tabs menu {
@@ -409,7 +495,7 @@ header img {
   /* background-color: #282f33; */
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  border-bottom-color: rgb(137, 168, 214);
+  border-bottom-color: rgb(255, 255, 255);
   color: #e0eff1;
   border-radius: 4px 4px 0 0;
   padding: 0.75rem 1rem;
@@ -420,15 +506,18 @@ header img {
 
 #tabs button:hover,
 #tabs button.active {
-  background-color: rgb(137, 168, 214, 0.9);
-  color: #273133;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* color: #273133; */
+  color: white;
   /* color: rgba(0, 0, 0, 0.5); */
 }
 
 #tab-content {
   /* background-color: #2d3942; */
-  background-color: rgba(0,0,0, 0.7);
-  border-radius: 0 4px 4px 4px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 20px 2px inset #00000052;
+  border-radius: 0 10px 10px 10px;
   padding: 1rem;
   height: 260px;
   text-align: left; /* 안의 내용 왼쪽 정렬로 */
@@ -449,7 +538,7 @@ header img {
 }
 
 #about-me-1>* {
-  margin: 0 10px;
+  margin: 0 5px;
   /* 요소들 간의 간격을 조정합니다. */
 } 
 /* ///화면 크기 줄어들면 밑으로 떨어지고, 가운데로 정렬이 되어야함..,그거구현 필요/// */
@@ -471,4 +560,218 @@ header img {
 } */
 .hideme {
   opacity: 0;
+}
+
+/* /////////////////////////// */
+
+.side2 {
+  position: relative;
+  display: block;
+  perspective: 600px;
+}
+
+.side2 .front {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.side2 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+  /* backface-visibility: visible; */
+}
+
+.side2 .front figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateZ(100px);
+  display: block;
+  text-align: center;
+}
+
+.side2 .back figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateZ(100px);
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+.side2 figcaption {
+  width: 60%;
+}
+
+.side2 figcaption h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3px 10px;
+}
+
+.side2 figcaption p {
+  font-size: 14px;
+}
+
+.side2:hover .front {
+  transform: rotateY(180deg);
+}
+
+.side2:hover .back {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+/* ///////////////////////////////////////////////// */
+
+
+#archiving-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+#archiving-1>* {
+  margin: 0 10px;
+}
+#github-1 {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+
+}
+
+#github-1 img {
+  width: 100px;
+  
+}
+
+#tistory-1 {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+
+}
+
+#tistory-1 img {
+  width: 270px;
+
+} */
+
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ */
+
+#github-1,
+#tistory-1 {
+  /* width: calc(300px - 10px); */
+  width: 500px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  margin: 20px 20px;
+}
+
+#github-1 img,
+#tistory-1 img {
+  height: 70px;
+  padding: 16px;
+}
+
+#archiving-1 ul {
+  text-align: left;
+}
+
+#archiving-1 p {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+#archiving-1 ul li {
+  margin: 1rem 0;
+}
+/* #github ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#github ul li {
+  text-align: left;
+} */
+
+
+/* /////////////////////////// */
+
+/* h3 svg {
+  width: 20px;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+  color: black;
+}
+ */
+
+
+
+#SendMail svg {
+  width: 20px;
+}
+
+#SendMail p {
+  margin-top: 5rem;
+  color: white;
+  font-weight: bold;
+
+}
+
+#SendMail a:hover {
+  text-decoration: underline;
+}
+
+/*  */
+#Skills {
+  align-items: center;
+  display: flex;
+  /* 요소들을 수평으로 배치하기 위해 flex를 사용합니다. */
+  justify-content: center;
+  /* 요소들을 수평 가운데로 정렬합니다. */
+  align-items: center;
+  /* 요소들을 수직 가운데로 정렬합니다. */
+
+
+}
+#Skills h3 {
+  margin-top: 5rem;
+  font-size: 2rem;
+
+}
+
+.skillsBg-0 {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.534);
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 0.5rem;
 }

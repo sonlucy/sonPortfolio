@@ -75,6 +75,7 @@ $(window).scroll(function(){
 
 document.addEventListener('DOMContentLoaded', function () {
   const menuItems = document.querySelectorAll('nav .navbar_menu li a');
+  const contentItems = document.querySelectorAll()
 
   menuItems.forEach(function (item) {
     item.addEventListener('click', function (event) {
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// ////////////////////////////////////////////////
 
 
 // //////////////////////////////////////////////////
