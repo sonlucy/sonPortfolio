@@ -450,33 +450,33 @@ footer ul li {
 
 
 /* ////////////////////// */
-#AboutMe {
-  margin: 0 20px;
+#AboutMe,
+#Skills,
+#Archiving,
+#Projects,
+#Intro {
+  margin: 5px 20px;
   padding: 50px 0;
+  border-radius: 7px;
+}
+
+#AboutMe {
   background-color: rgba(255, 0, 0, 0.1);
 }
 
 #Skills {
-  margin: 0 20px;
-  padding: 50px 0;
   background-color: rgba(255, 166, 0, 0.1);
 }
 
 #Archiving {
-  margin: 0 20px;
-  padding: 50px 0;
   background-color: rgba(255, 255, 0, 0.1);
 }
 
 #Projects {
-  margin: 0 20px;
-  padding: 50px 0;
   background-color: rgba(0, 128, 0, 0.1);
 } 
 
 #Intro {
-  margin: 0 20px;
-  padding: 50px 0;
   background-color: rgba(0, 0, 255, 0.1);
 }
 
@@ -982,6 +982,8 @@ h3 a:hover {
 .bubble {
   background-color: var(--bubble-color);
   transition: transform 0.3s ease;
+
+  box-shadow: 2px 2px 10px #25252573;
 }
 
 .bubble:hover {
