@@ -24,7 +24,8 @@ const content = [
 const btnOne = document.getElementById("btn-1");
 const btnTwo = document.getElementById("btn-2");
 const btnThree = document.getElementById("btn-3");
-const tabContent = document.getElementById("tab-content");
+// const tabContent = document.getElementById("tab-content")
+const tabContent = document.querySelector(".tab-content");
 
 function displayContent(items) {
   let listContent = "";
