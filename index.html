@@ -110,9 +110,11 @@
   <main>
 
     <section class="main-title">
-      <h1>bo-kyung Son 's Portfolio</h1>
-
+      <div>
+        <h1>bo-kyung Son 's Portfolio</h1>
+      </div>
     </section>
+
 
     <!--     <section id="motto">
       <p>좌우명이 들어감</p>
@@ -121,33 +123,27 @@
     <section id="AboutMe">
       <h2><a href="#AboutMe">ABOUT ME</a></h2>
       <div id="about-me-1">
+<!--         <div class="myImgdiv">
+          <img id="myImg" src="./img/myphoto.jpg" alt="내 사진">
+        </div> -->
+<!--           <img id="myImg" src="./img/myimge-removebg-preview.png" alt="내 사진"> -->
 
-        <!-- <img id="myImg" src="./img/myimge-removebg-preview.png" alt="내 사진"> -->
-        <article class="column col8">
-          <!-- side2 -->
-          <div class="side2">
-            <figure class="front">
-              <img src="./img/myimge-removebg-preview.png" alt="이미지2">
-              <figcaption>
-                <h3>hello</h3>
-              </figcaption>
-            </figure>
-            <figure class="back">
-              <img src="./img/myimge-removebg-preview.png" alt="이미지2">
-              <figcaption>
-                <h3>Why</h3>
-              </figcaption>
-            </figure>
-          </div>
-          <!-- side2//-->
-        </article>
+      <div class="side3">
+        <figure>
+          <img src="./img/myimge-removebg-preview.png" alt="이미지3">
+          <figcaption>
+            <h3>성장하는<em>개발자</em></h3>
+          </figcaption>
+        </figure>
+      </div>
+
         <div id="tabs">
           <menu>
-            <button id="btn-1" class="active">intro</button>
-            <button id="btn-2">background</button>
-            <button id="btn-3">I love...</button>
+            <button id="btn-1" class="active">I AM</button>
+            <button id="btn-2">BG</button>
+            <button id="btn-3">💗</button>
           </menu>
-          <div id="tab-content"></div>
+          <div class="tab-content"></div>
         </div>
       </div>
       <div>
@@ -183,7 +179,7 @@
 
         <div id="skills-1">
   
-          <div class="skillsBg-0">
+          <div class="skillsBg-0 bubble">
             <div>
               <h3>Main stack</h3>
             </div>
@@ -212,7 +208,7 @@
           </div>
   
   
-          <div class="skillsBg-0">
+          <div class="skillsBg-0 bubble">
             <div>
               <h3>Sub stack</h3>
               <!--             <h3>used at least once</h3> -->
@@ -260,26 +256,28 @@
           </div>
   
   
-          <div class="skillsBg-1">
+          <div class="skillsBg-1 bubble">
             <div>
-              <h3>Tools</h3>
+              <h3>Comunication
+                / Version Control</h3>
             </div>
             <section class="skillsBg">
               <p><img
                   src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
                   alt="Figma"></p>
               <p><img
-                  src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&amp;logo=Adobe%20Lightroom&amp;logoColor=white"
-                  alt="Adobe Lightroom"></p>
-              <p><img
-                  src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&amp;logo=Adobe%20Premiere%20Pro&amp;logoColor=white"
-                  alt="Adobe Premiere Pro"></p>
+                  src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+                  alt="Git">
+                <img
+                  src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                  alt="GitHub"></p>
+          
             </section>
           </div>
           <!-- <img src="" alt="도구들"> -->
   
   
-          <div class="skillsBg-1">
+          <div class="skillsBg-1 bubble">
             <div>
               <h3>Certificate</h3>
             </div>
@@ -298,7 +296,7 @@
       <h2><a href="#Archiving">Archiving</a></h2>
       <div id="archiving-1">
 
-        <div id="github-1">
+        <div class="github-1 bubble">
           <a href="https://github.com/sonlucy"><img src="./img/github.svg" alt="깃허브이미지"></a>
           <i class="fa-solid fa-paperclip"></i>
           <div>
@@ -315,7 +313,7 @@
           </div>
         </div>
 
-        <div id="tistory-1">
+        <div class="tistory-1 bubble">
           <a href="https://aplight.tistory.com"><img src="./img/tistoryLogo.svg" alt="티스토리이미지"></a>
           <i class="fa-solid fa-paperclip"></i>
           <div>
@@ -354,7 +352,7 @@
 
   <footer>
     <div>
-      <p>developed / son bo-kyung</p>
+      <p>©developed 2024 / son bo-kyung</p>
     </div>
     <div>
       <ul>
