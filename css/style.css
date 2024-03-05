@@ -1,6 +1,8 @@
 :root {
   --logo-color: white;
   --text-color: #f81b1b;
+  --bubble-color: rgba(255, 255, 255, 0.5);
+  --nav-color: rgba(0, 0, 0, 0.363);
 }
 
 html {
@@ -47,14 +49,15 @@ body {
 /*   width: auto; */
   width: 100%;
   height: 700px;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*   background-repeat: no-repeat;
+  background-size: cover; */
+
 }
 .main-title h1 {
   font-size: 4rem;
   /* color: white; */
   padding: 1rem;
-  margin-top: 13rem;
+  margin-top: 20rem;
   font-family: "Black Han Sans",
   sans-serif;
   font-weight: 400;
@@ -66,6 +69,14 @@ body {
   color: transparent;
 
   text-shadow: 3px -3px 3px rgba(204, 202, 202, 0.4);
+
+  transition: all 0.5s ease;
+}
+
+.main-title h1:hover {
+    text-shadow: 0 0 1px #fff,
+    0 0 5px #fff,
+    0 0 50px rgb(0, 255, 170)
 }
 
 
@@ -129,7 +140,7 @@ a {
 }
 
 .navbar_menu li:hover {
-  background-color: rgb(137, 168, 214);
+  background-color: var(--nav-color);
   border-radius: 3px;
 }
 
@@ -409,11 +420,11 @@ footer ul {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: rgba(0, 0, 0, 0.404);
   position: relative;
   transform: translateY(100%);
+  padding: 2rem 0;
 }
-
 footer div {
   display: flex;
   /* div 요소를 flex container로 설정 */
@@ -421,8 +432,8 @@ footer div {
   /* div 내부의 요소들을 가운데 정렬 */
   align-items: center;
   /* div 내부의 요소들을 수직 가운데 정렬 */
-  font-family: "Kanit",
-  sans-serif;
+/*   font-family: "Kanit",
+  sans-serif; */
   color: white;
 }
 footer div ul {
@@ -576,17 +587,18 @@ header img {
 
 #tabs button:hover,
 #tabs button.active {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(70, 0, 0, 0.9);
   /* color: #273133; */
   color: white;
   /* color: rgba(0, 0, 0, 0.5); */
 }
 
-#tab-content {
+.tab-content {
   /* background-color: #2d3942; */
   color: black;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 2px 2px 20px 2px inset #00000052;
+/*   background-color: rgba(255, 255, 255, 0.7); */
+  box-shadow: 2px 2px 20px 2px inset #ffffff52;
+    transition: box-shadow 0.5s;
   border-radius: 0 10px 10px 10px;
   padding: 1rem;
   height: 20rem;
@@ -596,8 +608,11 @@ header img {
   font-optical-sizing: auto;
 
 }
+.tab-content:hover {
+  box-shadow: 2px 2px 30px 2px inset #ffffff9d;
+}
 
-#tab-content li {
+.tab-content li {
   margin: 0.75rem 0;
 }
 
@@ -618,10 +633,9 @@ header img {
 /* ///화면 크기 줄어들면 밑으로 떨어지고, 가운데로 정렬이 되어야함..,그거구현 필요/// */
 
 
-#myImg {
-  max-width: 300px;
-  /* 이미지의 최대 너비를 설정합니다. */
-}
+
+
+
 
 #tabs {
   flex: 1;
@@ -638,77 +652,59 @@ header img {
 
 /* /////////////////////////// */
 
-.side2 {
+.side3 {
   position: relative;
-  display: block;
-  perspective: 600px;
+  overflow: hidden;
+/*   background: #000; */
+  height: 20rem;
 }
 
-.side2 .front {
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: all 0.5s ease-in-out;
-  backface-visibility: hidden;
-}
-
-.side2 .back {
+.side3 figcaption {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  transform: translate(350%, -50%) rotate(180deg);
+}
+
+.side3 figcaption:after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: #00000056;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   z-index: -1;
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  transition: all 0.5s ease-in-out;
-  backface-visibility: hidden;
-  /* backface-visibility: visible; */
+  transform: translate(-50%, -50%);
 }
 
-.side2 .front figcaption {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) translateZ(100px);
+.side3 figcaption h3 {
+  font-size: 1.5rem;
+}
+
+.side3 figcaption em {
   display: block;
-  text-align: center;
-}
-
-.side2 .back figcaption {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) translateZ(100px);
-  color: #fff;
-  font-size: 20px;
-  display: block;
-  text-align: center;
-}
-
-.side2 figcaption {
-  width: 60%;
-}
-
-.side2 figcaption h3 {
-  color: #fff;
-  font-size: 20px;
-  font-family: 'Abel', sans-serif;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 3px 10px;
 }
 
-.side2 figcaption p {
-  font-size: 14px;
+.side3 img {
+  display: block;
+  transition: all 0.3s ease;
 }
 
-.side2:hover .front {
-  transform: rotateY(180deg);
+.side3:hover img {
+  filter: blur(2px);
 }
 
-.side2:hover .back {
-  transform: rotateY(0deg);
-  z-index: 1;
+.side3:hover figcaption {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 
 /* ///////////////////////////////////////////////// */
@@ -764,22 +760,22 @@ header img {
 }
  */
 
-#github-1,
-#tistory-1 {
+.github-1,
+.tistory-1 {
   /* width: calc(300px - 10px); */
 /*   width: 400px;
   height: 450px; */
 /*   min-width: 320px - 80px; */
-  background-color: rgba(255, 255, 255, 0.7);
+  /* background-color: rgba(255, 255, 255, 0.7); */
   border-radius: 15px;
   margin: 0.5rem;
   padding: 1.5rem;
   align-items: center;
-  height: 30rem;
+  height: 32rem;
 }
 
-#github-1 img,
-#tistory-1 img {
+.github-1 img,
+.tistory-1 img {
   height: 5vw;
   padding: 0.5rem;
   margin-top: 1rem;
@@ -858,14 +854,13 @@ h3 a:hover {
 
 .skillsBg-0 {
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.534);
+
   border-radius: 15px;
   margin: 0.5rem;
   padding: 1rem 0.5rem;
 }
 .skillsBg-1 {
   width: 40%;
-  background-color: rgba(255, 255, 255, 0.534);
   border-radius: 15px;
   margin: 0.5rem;
   padding: 1rem 0rem;
@@ -912,9 +907,9 @@ h3 a:hover {
 }
 
 #Skills h2 {
-  display: block;
-  margin-bottom: 1rem;
-  text-align: center;
+/*   display: block; */
+/*   margin-bottom: 1rem;
+  text-align: center; */
 }
 /*  */
 
@@ -964,8 +959,20 @@ h3 a:hover {
 
 @media screen and (max-width: 768px) {
 
-  #github-1 img,
-  #tistory-1 img {
+  .github-1 img,
+  .tistory-1 img {
     height: 12vw;
   }
 }
+
+/*  */
+.bubble {
+  background-color: var(--bubble-color);
+  transition: transform 0.3s ease;
+}
+
+.bubble:hover {
+  transform: scale(1.02);
+}
+
+/*  */
