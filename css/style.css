@@ -54,7 +54,7 @@ body {
 
 }
 .main-title h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   /* color: white; */
   padding: 1rem;
   margin-top: 20rem;
@@ -551,7 +551,7 @@ header img {
 
 #tabs {
   color: #bdd1d4;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 500px;
   margin: 2rem auto; /*가운데 정렬 위해 auto */
   overflow: hidden;
@@ -607,6 +607,7 @@ header img {
   serif;
   font-optical-sizing: auto;
 
+
 }
 .tab-content:hover {
   box-shadow: 2px 2px 30px 2px inset #ffffff9d;
@@ -638,8 +639,9 @@ header img {
 
 
 #tabs {
-  flex: 1;
-  /* 남은 공간을 모두 차지하도록 설정합니다. */
+  flex: 1; /* 남은 공간을 모두 차지하도록 설정합니다. */
+/*   margin: auto; */
+/*   max-width: 5rem; */
 }
 
 /* ////////////////////////////// */
@@ -651,6 +653,7 @@ header img {
 }
 
 /* /////////////////////////// */
+
 
 .side3 {
   position: relative;
@@ -697,6 +700,14 @@ header img {
   display: block;
   transition: all 0.3s ease;
 }
+.side3 figure {
+  margin: 0; 
+}
+.side3 img {
+  max-width: 100%; /* 이미지가 부모 요소에 맞춰질 수 있도록 최대 너비 설정 */
+  max-height: 100%; /* 이미지가 부모 요소에 맞춰질 수 있도록 최대 높이 설정 */
+}
+
 
 .side3:hover img {
   filter: blur(2px);
@@ -706,6 +717,7 @@ header img {
   transform: translate(-50%, -50%) rotate(0deg);
   opacity: 1;
 }
+
 
 /* ///////////////////////////////////////////////// */
 
@@ -769,9 +781,10 @@ header img {
   /* background-color: rgba(255, 255, 255, 0.7); */
   border-radius: 15px;
   margin: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   align-items: center;
   height: 32rem;
+/*   min-width: 100px */
 }
 
 .github-1 img,
