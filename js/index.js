@@ -1,14 +1,16 @@
 const content = [
   [
-    "안녕하세요. ~~~를 하는 손보경입니다."
+    "안녕하세요. ~~~를 하는 손보경입니다. 너우ㅏ움임워뮈루미뮈뤼마림리ㅏㅁㄹ니루이눌인뤼우니루니ㅜ리울"
   ],
   [
+    "",
     "2001년 출생",
     "신명고등학교 졸업 (2020/2)",
     "영남대학교 정보통신공학과 졸업 (2024/2)",
     "멀티캠퍼스-프론트엔드 수료(2024/4/22)"
   ],
   [
+    "",
     "🏊‍♂️ swiming",
     "⚽ watching/playing football",
     "🎧 listening to music",
@@ -26,8 +28,13 @@ const tabContent = document.getElementById("tab-content");
 
 function displayContent(items) {
   let listContent = "";
+  let i=0
   for (const item of items) {
-    listContent += `<li>${item}</li>`;
+    i+=1;
+    if (i==1 ){listContent += `<p id="FirstItem">${item}</p>`;}
+    else {
+      listContent += `<li>${item}</li>`;
+    }
   }
   const list = document.createElement("ul");
   tabContent.innerHTML = ""; 

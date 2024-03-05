@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="./js/main.js" defer></script>
   <script src="./js/index.js" defer></script>
+  <!-- navbar 구현 위한 JQery 라이브러리 불러오기 -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://kit.fontawesome.com/83eaaa00d1.js" crossorigin="anonymous"></script>
 
@@ -26,6 +27,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moirai+One&family=Nanum+Brush+Script&family=Nanum+Myeongjo&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Gasoek+One&family=Gugi&family=Hahmlet:wght@100..900&family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moirai+One&family=Nanum+Brush+Script&family=Nanum+Myeongjo&display=swap"
+    rel="stylesheet">
+
 
 
 </head>
@@ -109,13 +114,14 @@
 
     </section>
 
-    <section id="motto">
+    <!--     <section id="motto">
       <p>좌우명이 들어감</p>
-    </section>
+    </section> -->
 
     <section id="AboutMe">
       <h2><a href="#AboutMe">ABOUT ME</a></h2>
       <div id="about-me-1">
+
         <!-- <img id="myImg" src="./img/myimge-removebg-preview.png" alt="내 사진"> -->
         <article class="column col8">
           <!-- side2 -->
@@ -173,170 +179,175 @@
 
     <section id="Skills">
       <h2><a href="#Skills">Skills</a></h2>
-      <article class="skillsBg-0">
-        <div>
-          <h3>Main stack</h3>
-        </div>
-        <!-- <img src="" alt="메인스택들"> -->
-        <section class="skillsBg">
-          <p>
-            <img
-              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
-              alt="HTML5">
-            <img
-              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
-              alt="CSS3">
-            <img
-              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
-              alt="JavaScript">
-          </p>
-          <p>
-            <img
-              src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
-              alt="Python">
-            <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
-              alt="C">
-            <img
-              src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white"
-              alt="C++"></p>
-        </section>
-      </article>
+      <div id="SkillsContent">
 
-
-      <article class="skillsBg-0">
-        <div>
-          <h3>Sub stack/used at least once</h3>
-        </div>
-        <!-- <img src="" alt="서브스택들"> -->
-        <section class="skillsBg">
-          <p>
-            <img
-              src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white"
-              alt="PHP">
-            <img
-              src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
-              alt="MySQL">
-          </p>
-          <p>
-            <img
-              src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&amp;logo=kotlin&amp;logoColor=white"
-              alt="Kotlin">
-            <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&amp;logo=r&amp;logoColor=white"
-              alt="R">
-          </p>
-          <p>
-            <img
-              src="https://img.shields.io/badge/assembly%20script-%23000000.svg?style=for-the-badge&amp;logo=assemblyscript&amp;logoColor=white"
-              alt="AssemblyScript">
-            <img
-              src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&amp;logo=gnu-bash&amp;logoColor=white"
-              alt="Shell Script">
-          </p>
-          <p>
-            <img
-              src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&amp;logo=jquery&amp;logoColor=white"
-              alt="jQuery">
-            <img
-              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"
-              alt="TypeScript">
-            <img
-              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
-              alt="React">
-          </p>
-          <p>
-            <img
-              src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
-              alt="NodeJS">
-            <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&amp;logo=next.js&amp;logoColor=white"
-              alt="Next JS">
-          </p>
-        </section>
-      </article>
-
-
-      <article class="skillsBg-0">
-        <div>
-          <h3>Tools</h3>
-        </div>
-        <section class="skillsBg">
-          <p><img
-              src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
-              alt="Figma"></p>
-          <p><img
-              src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&amp;logo=Adobe%20Lightroom&amp;logoColor=white"
-              alt="Adobe Lightroom"></p>
-          <p><img
-              src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&amp;logo=Adobe%20Premiere%20Pro&amp;logoColor=white"
-              alt="Adobe Premiere Pro"></p>
-        </section>
-      </article>
-      <!-- <img src="" alt="도구들"> -->
-
-
-      <article class="skillsBg-0">
-        <div>
-          <h3>Certificate</h3>
-        </div>
-        <section class="skillsBg">
-          <img src="./img/qnet.png" alt="정처기" style="width: 120px;">
-        </section>
-        <!-- <img src="" alt="자격증"> -->
-      </article>
-
-      </section>
-      <section id="Archiving">
-        <h2><a href="#Archiving">Archiving</a></h2>
-        <div id="archiving-1">
-          <div id="github-1">
-            <a href="https://github.com/sonlucy"><img src="./img/github.svg" alt="깃허브이미지"></a>
-            <i class="fa-solid fa-paperclip"></i>
+        <div id="skills-1">
+  
+          <div class="skillsBg-0">
             <div>
-              <p></p>
-              <ul>
-                <li>학부 시절 수강한 수업 과제물</li>
-                <li>코딩 연습, 정리한 코드들</li>
-                <li>알고리즘 문제 정답 코드들</li>
-                <li>개인 프로젝트 및 협업 프로젝트 코드들</li>
-              </ul>
-              <p>
-                을 푸시해둔 소스 코드 저장소
-              </p>
+              <h3>Main stack</h3>
             </div>
+            <!-- <img src="" alt="메인스택들"> -->
+            <section class="skillsBg">
+              <p>
+                <img
+                  src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                  alt="HTML5">
+                <img
+                  src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+                  alt="CSS3">
+                <img
+                  src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+                  alt="JavaScript">
+  
+                <img
+                  src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+                  alt="Python">
+                <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
+                  alt="C">
+                <img
+                  src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white"
+                  alt="C++"></p>
+            </section>
           </div>
-
-          <div id="tistory-1">
-            <a href="https://aplight.tistory.com"><img src="./img/tistoryLogo.svg" alt="티스토리이미지"></a>
-            <i class="fa-solid fa-paperclip"></i>
+  
+  
+          <div class="skillsBg-0">
             <div>
-              <p style="color: rgb(104, 104, 104);">-> 개발 관련 게시물 +100개</p>
-              <ul>
-                <li>학부 시절 배운 수업의 내용 정리</li>
-                <li>학습한 내용을 한번 더 찾아보고 정제하여 복습 및 정리</li>
-                <li>같은 오류를 맞이했을 때 쉽게 해결하기 위한 에러 상황과 해결방법 기록</li>
-                <li>다른 이들과의 지식 공유</li>
-              </ul>
-              <p>
-                의 역할/목적을 두는 개인 기술 블로그
-              </p>
+              <h3>Sub stack</h3>
+              <!--             <h3>used at least once</h3> -->
             </div>
+            <!-- <img src="" alt="서브스택들"> -->
+            <section class="skillsBg">
+  
+              <img
+                src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&amp;logo=php&amp;logoColor=white"
+                alt="PHP">
+              <img
+                src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
+                alt="MySQL">
+  
+              <img
+                src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&amp;logo=kotlin&amp;logoColor=white"
+                alt="Kotlin">
+              <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&amp;logo=r&amp;logoColor=white"
+                alt="R">
+  
+              <img
+                src="https://img.shields.io/badge/assembly%20script-%23000000.svg?style=for-the-badge&amp;logo=assemblyscript&amp;logoColor=white"
+                alt="AssemblyScript">
+              <img
+                src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&amp;logo=gnu-bash&amp;logoColor=white"
+                alt="Shell Script">
+  
+              <img
+                src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&amp;logo=jquery&amp;logoColor=white"
+                alt="jQuery">
+              <img
+                src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"
+                alt="TypeScript">
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
+                alt="React">
+  
+              <img
+                src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
+                alt="NodeJS">
+              <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&amp;logo=next.js&amp;logoColor=white"
+                alt="Next JS">
+              </p>
+            </section>
+          </div>
+  
+  
+          <div class="skillsBg-1">
+            <div>
+              <h3>Tools</h3>
+            </div>
+            <section class="skillsBg">
+              <p><img
+                  src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&amp;logo=figma&amp;logoColor=white"
+                  alt="Figma"></p>
+              <p><img
+                  src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF.svg?style=for-the-badge&amp;logo=Adobe%20Lightroom&amp;logoColor=white"
+                  alt="Adobe Lightroom"></p>
+              <p><img
+                  src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&amp;logo=Adobe%20Premiere%20Pro&amp;logoColor=white"
+                  alt="Adobe Premiere Pro"></p>
+            </section>
+          </div>
+          <!-- <img src="" alt="도구들"> -->
+  
+  
+          <div class="skillsBg-1">
+            <div>
+              <h3>Certificate</h3>
+            </div>
+            <section class="skillsBg">
+              <img src="./img/qnet.png" alt="정처기" style="width: 120px;">
+            </section>
+            <!-- <img src="" alt="자격증"> -->
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section id="Projects">
-        <h2><a href="#Project">Project</a></h2>
-        <div id="projects-1">
-          <div id="pj1">
-            <h3>프로젝트1 제목</h3>
-            프로젝트1에 대한 내용
-          </div>
-          <div id="pj2">
-            <h3>프로젝트2 제목</h3>
-            프로젝트2에 대한 내용
+
+    <section id="Archiving">
+      <h2><a href="#Archiving">Archiving</a></h2>
+      <div id="archiving-1">
+
+        <div id="github-1">
+          <a href="https://github.com/sonlucy"><img src="./img/github.svg" alt="깃허브이미지"></a>
+          <i class="fa-solid fa-paperclip"></i>
+          <div>
+            <p style="color: rgb(104, 104, 104)">-> 400+ contributions in 2024</p>
+            <ul>
+              <li>학부 시절 수강한 수업 과제물</li>
+              <li>코딩 연습, 정리한 코드들</li>
+              <li>알고리즘 문제 해결 코드들</li>
+              <li>개인 프로젝트 및 협업 프로젝트 코드들</li>
+            </ul>
+            <p>
+              을 푸시해둔 소스 코드 저장소
+            </p>
           </div>
         </div>
-      </section>
+
+        <div id="tistory-1">
+          <a href="https://aplight.tistory.com"><img src="./img/tistoryLogo.svg" alt="티스토리이미지"></a>
+          <i class="fa-solid fa-paperclip"></i>
+          <div>
+            <p style="color: rgb(104, 104, 104);">-> 개발 관련 게시물 100+개</p>
+            <ul>
+              <li>학부 시절 배운 수업의 내용 정리</li>
+              <li>새롭게 학습한 내용을 한번 더 찾아보고 정제하여 복습 및 정리</li>
+              <li>같은 오류를 맞이했을 때 쉽게 해결하기 위한 에러 상황과 해결방법 기록</li>
+              <li>다른 이들과의 지식 공유</li>
+            </ul>
+            <p>
+              의 역할/목적을 두는 개인 기술 블로그
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="Projects">
+      <h2><a href="#Project">Project</a></h2>
+      <div id="projects-1">
+        <div id="pj1">
+          <h3>프로젝트1 제목</h3>
+          프로젝트1에 대한 내용
+        </div>
+        <div id="pj2">
+          <h3>프로젝트2 제목</h3>
+          프로젝트2에 대한 내용
+        </div>
+      </div>
+    </section>
 
   </main>
 
