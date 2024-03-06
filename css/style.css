@@ -779,7 +779,6 @@ header img {
   height: 450px; */
 /*   min-width: 320px - 80px; */
   /* background-color: rgba(255, 255, 255, 0.7); */
-  border-radius: 15px;
   margin: 0.5rem;
   padding: 1rem;
   align-items: center;
@@ -867,14 +866,11 @@ h3 a:hover {
 
 .skillsBg-0 {
   width: 80%;
-
-  border-radius: 15px;
   margin: 0.5rem;
   padding: 1rem 0.5rem;
 }
 .skillsBg-1 {
   width: 40%;
-  border-radius: 15px;
   margin: 0.5rem;
   padding: 1rem 0rem;
 }
@@ -982,7 +978,7 @@ h3 a:hover {
 .bubble {
   background-color: var(--bubble-color);
   transition: transform 0.3s ease;
-
+  border-radius: 15px;
   box-shadow: 2px 2px 10px #25252573;
 }
 
@@ -991,3 +987,4 @@ h3 a:hover {
 }
 
 /*  */
+
