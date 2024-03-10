@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="./js/main.js" defer></script>
   <script src="./js/index.js" defer></script>
-  <!-- navbar 구현 위한 JQery 라이브러리 불러오기 -->
+  <!-- navbar 스크롤 동작 구현 위한 JQery 라이브러리 불러오기 -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://kit.fontawesome.com/83eaaa00d1.js" crossorigin="anonymous"></script>
 
@@ -62,50 +62,6 @@
 
     </nav>
   </header>
-
-  <!-- 
-  <div class="frame-1">
-    <div class="rectangle-2"></div>
-    <img class="ellipse-1" src="./img/Ellipse 1.png" />
-    <svg class="skip-back" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.375 22.5L10.125 13.5L21.375 4.5V22.5Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M5.625 21.375V5.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    <svg class="skip-forward" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5.41667 4.5L16.25 13.5L5.41667 22.5V4.5Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M20.5833 5.625V21.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    <svg class="pause" width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19.1667 7.83337H11.5V39.1667H19.1667V7.83337Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M34.5 7.83337H26.8333V39.1667H34.5V7.83337Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </div>
--->
-
-  <!--     <div class="group-1">
-    <div class="rectangle-1"></div>
-    <img class="ellipse-1" src="./img/Ellipse 1.png" />
-    <svg class="skip-back" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.375 22.5L10.125 13.5L21.375 4.5V22.5Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M5.625 21.375V5.625" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    <svg class="skip-forward" width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5.41667 4.5L16.25 13.5L5.41667 22.5V4.5Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M20.5833 5.625V21.375" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    <svg class="pause" width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19.1667 7.83331H11.5V39.1666H19.1667V7.83331Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M34.5 7.83331H26.8333V39.1666H34.5V7.83331Z" fill="black" stroke="black" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </div> -->
 
   <main>
 
@@ -196,7 +152,9 @@
                 <img
                   src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
                   alt="JavaScript">
-  
+                <img
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
+                  alt="React">
                 <img
                   src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
                   alt="Python">
@@ -244,15 +202,11 @@
               <img
                 src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"
                 alt="TypeScript">
-              <img
-                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
-                alt="React">
   
               <img
                 src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
                 alt="NodeJS">
-              <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&amp;logo=next.js&amp;logoColor=white"
-                alt="Next JS">
+
               </p>
             </section>
           </div>
@@ -304,7 +258,7 @@
           <a href="https://github.com/sonlucy"><img src="./img/github.svg" alt="깃허브이미지"></a>
           <i class="fa-solid fa-paperclip"></i>
           <div>
-            <p style="color: rgb(104, 104, 104)">-> 400+ contributions in 2024</p>
+            <p style="color: rgb(104, 104, 104)">-> 300+ contributions in 2024</p>
             <ul>
               <li>학부 시절 수강한 수업 과제물</li>
               <li>코딩 연습, 정리한 코드들</li>
@@ -321,7 +275,7 @@
           <a href="https://aplight.tistory.com"><img src="./img/tistoryLogo.svg" alt="티스토리이미지"></a>
           <i class="fa-solid fa-paperclip"></i>
           <div>
-            <p style="color: rgb(104, 104, 104);">-> 개발 관련 게시물 100+개</p>
+            <p style="color: rgb(104, 104, 104);">-> 개발 관련 게시물 70+개</p>
             <ul>
               <li>학부 시절 배운 수업의 내용 정리</li>
               <li>새롭게 학습한 내용을 한번 더 찾아보고 정제하여 복습 및 정리</li>
@@ -348,52 +302,98 @@
             <h3>포트폴리오 웹사이트</h3>
             <a href="bo-kyung.netlify.app">bo-kyung.netlify.app</a>
           </div>
+
           <div>
-            <img src="" alt="이미지">
+            <img src="./img/sonPortfolio.JPG" alt="이미지">
           </div>
-          <div>
+
+          <div class="description">
             <p>
               현재 보고 있는 이 웹 사이트에 해당합니다. 
-              navbar 구현에 jQuery 라이브러리를 사용했으며,
-              나머지 부분은 모두 프론트엔드의 가장 기본이 되는 html, css, js를 기반으로 제작했습니다.
+              navbar 스크롤 동작 구현에 jQuery 라이브러리를 사용했으며,
+              나머지 부분은 모두 프론트엔드의 가장 기본이 되는 javascript를 기반으로 제작했습니다.
               
             </p>
           </div>
-          <div>
-            깃허브: 
-          </div>
-          <div>
-            html, css, js, JQery
-            netlify
-          </div>
+
+          <section class="subsection">
+            <div>
+              <p>Github🗂️ : <a href="https://github.com/sonlucy/sonPortfolio">https://github.com/sonlucy/sonPortfolio</a></p>
+            </div>
+            <div>
+              <p>Stack⚒️ : html, css, javascript, jQuery </p>
+            </div>
+          </section>
         </div>
 
         <div class="pj2 bubble">
           <div>
-            <h3>프로젝트2 제목</h3>
+            <h3>화장품 판매원 관리 시스템</h3>
           </div>
           <div>
-            프로젝트2에 대한 내용
+            <img src="./img/sales.png" alt="이미지">
           </div>
+
+<!--               <div class="slider__wrap">
+                <div class="slider__img">
+                  <img src="./img/salse-1.jpeg" alt="이미지1">
+                  <img src="./img/sales-2.png" alt="이미지2">
+                  <img src="./img/sales.png" alt="이미지3">
+                  <button id="prev">&lang;</button>
+                  <button id="next">&rang;</button>
+                </div>
+              </div> -->
+
+          <div class="description">
+            <p>학부 시절 데이터베이스 수업 시간에 진행한 프로젝트입니다.
+              데이터베이스를 구축할 때 정규형을 잘 만족시키도록 데이터 구조를 최적화시키는 것이 프로젝트 진행 중 가장 어렵게 느껴졌던 부분이었던 것 같습니다.
+              </p>
+          </div>
+
+          <section class="subsection">
+            <div>
+              <p>Github🗂️ : <a href="https://github.com/sonlucy/salesManagement">https://github.com/sonlucy/salesManagement</a>
+              </p>
+            </div>
+            <div>
+              <p>Stack⚒️ : html, php, mysql, apache</p>
+            </div>
+          </section>
         </div>
 
         <div class="pj3 bubble">
           <div>
-            <h3>프로젝트3 제목</h3>
+            <h3>식물 질병 이미지 분류 시스템</h3>
           </div>
           <div>
-            프로젝트3에 대한 내용
+            <img src="./img/plant.png" alt="이미지">
           </div>
+
+          <div class="description">
+            <p>졸업작품으로 제출했던 프로젝트였습니다. 여러 제약사항과 어려움이 많았고
+              결론적으로는 기대했던 만큼 이미지 분류 성능이 나오지는 못했습니다.
+              통신의 경우, 웹소켓을 통해 양방향 통신을 진행했습니다.
+            </p>
+          </div>
+
+          <section class="subsection">
+          <div>
+            <p>Github🗂️ : <a href="https://github.com/sonlucy/plantImageClassification">https://github.com/sonlucy/plantImageClassification</a></p>
+          </div>
+          <div>
+            <p>Stack⚒️ : html, css, javascript, python, tensorflow</p>
+          </div>
+          </section>
         </div>
 
-        <div class="pj4 bubble">
+<!--         <div class="pj4 bubble">
           <div>
             <h3>프로젝트4 제목</h3>
           </div>
           <div>
             프로젝트4에 대한 내용
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section>
