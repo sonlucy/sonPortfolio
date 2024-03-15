@@ -299,6 +299,7 @@ input[id="menuicon"]:checked+label+div {
     padding: 20px; */
     /* width: 500px; */
     width: 80%;
+    height: auto;
   }
 
 /*   #skills-1 {
@@ -600,6 +601,7 @@ header img {
   font-family: "Hahmlet",
   serif;
   font-optical-sizing: auto;
+  
 
 
 }
@@ -890,8 +892,16 @@ h3 a:hover {
 /* ///////////////////////////////// */
 
 #FirstItem {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
+
+@media screen and (max-width: 380px) {
+  .tab-content {
+    height: auto;
+  }
+
+}
+
 /* /////////////////////////////////// */
 
 #Skills div {
@@ -1039,6 +1049,17 @@ h3 a:hover {
   width: auto;
   font-size: 1.2rem;
   overflow: auto;
+  margin-left: 2rem;
+  padding: 2rem;
+
+}
+.subsection ul li {
+  display: flex;
+  /* align-items: center; */
+}
+
+.subsection ul {
+  margin: auto;
 }
 
 @media (max-width: 1365px) {
@@ -1046,6 +1067,9 @@ h3 a:hover {
   .pj2,
   .pj3 {
   margin: 2rem 5rem;
+}
+.subsection {
+  margin-left: 0.8rem;
 }
 }
 
@@ -1060,8 +1084,21 @@ h3 a:hover {
   }
   .subsection {
     font-size: 1rem;
+    padding: 1rem 0;
   }
+/*   .subsection ul {
+    padding: 0;
+  } */
+
 } 
+@media (max-width: 800px) {
+  .subsection {
+    font-size: 0.8rem;
+  }
+    .subsection ul {
+    padding: 0rem;
+  }
+}
 
 @media (max-width: 600px) {
   .pj1, .pj2, .pj3 {
@@ -1076,4 +1113,17 @@ h3 a:hover {
   font-size: 1.2rem;
   }
 
+/* .subsection {
+  margin: 0;
+} */
+}
+
+@media (max-width: 400px) {
+  .subsection {
+    font-size: 0.6rem;
+  }
+
+  .subsection ul {
+    padding: 0rem;
+  }
 }
