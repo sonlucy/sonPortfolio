@@ -1073,12 +1073,16 @@ h3 a:hover {
 .subsection dt {
   float: left; /*한줄로출력*/
   margin-right: 1rem;
-
 }
 
 .subsection dd {
   display: block;
   margin-inline-start: 7em;
+}
+
+.subsection dd a {
+  display: block; /* <a> 태그를 블록 요소로 변경하여 줄 바꿈 가능하도록 설정 */
+  word-wrap: break-word; /* 텍스트의 자동 줄 바꿈 활성화 */
 }
 
 @media (max-width: 1365px) {
@@ -1089,6 +1093,7 @@ h3 a:hover {
 }
 .subsection {
   margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 }
 
@@ -1111,9 +1116,7 @@ h3 a:hover {
 
 } 
 @media (max-width: 800px) {
-  .subsection {
-    font-size: 0.8rem;
-  }
+
     .subsection ul {
     padding: 0rem;
   }
@@ -1123,7 +1126,9 @@ h3 a:hover {
   .pj1, .pj2, .pj3 {
   margin: 2rem 1rem;
   }
-
+  .subsection {
+    font-size: 0.9rem;
+  }
   .description {
     font-size: 1rem;
   }
@@ -1139,11 +1144,16 @@ h3 a:hover {
 
 @media (max-width: 400px) {
   .subsection {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .subsection ul {
     padding: 0rem;
+  }
+  
+  .description {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
