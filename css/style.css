@@ -48,7 +48,7 @@ body {
   /* background-image: url("../img/photo-1618005198919-d3d4b5a92ead.jpeg"); */
 /*   width: auto; */
   width: 100%;
-  height: 700px;
+  height: 500px;
 /*   background-repeat: no-repeat;
   background-size: cover; */
 
@@ -106,6 +106,8 @@ a {
   align-items: center;
   background-color: rgba(71, 71, 70, 0.479);
   padding: 8px 12px;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .navbar_logo {
@@ -187,7 +189,7 @@ input[id="menuicon"]+label span {
 }
 
 input[id="menuicon"]+label span:nth-child(1) {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   top: 0;
 }
 
@@ -249,6 +251,10 @@ input[id="menuicon"]:checked+label+div {
   .navbar_logo {
     font-size: 2rem;
   } */
+  .navbar_logo {
+    font-weight: 300;
+    font-size: 2rem;
+  }
 
   .navbar_menu {
     display: none;
@@ -450,9 +456,10 @@ footer ul li {
 #Archiving,
 #Projects,
 #Intro {
-  margin: 5px 20px;
+  margin: 30px 20px;
   padding: 50px 0;
-  border-radius: 7px;
+  border-radius: 17px;
+  box-shadow: 5px 5px 10px #00000071;
 }
 
 #AboutMe {
@@ -778,8 +785,8 @@ header img {
   margin: 0.5rem;
   padding: 1rem;
   align-items: center;
-  height: 32rem;
-/*   min-width: 100px */
+  height: auto;
+  min-width: 100px;
 }
 
 .github-1 img,
@@ -874,11 +881,13 @@ h3 a:hover {
   width: 80%;
   margin: 0.5rem;
   padding: 1rem 0.5rem;
+  /* max-width: 2000px; */
 }
 .skillsBg-1 {
   width: 40%;
   margin: 0.5rem;
   padding: 1rem 0rem;
+  /* max-width: 1000px; */
 }
 @media screen and (max-width: 768px) {
   .skillsBg-1 {
@@ -1027,6 +1036,10 @@ h3 a:hover {
   font-size: 1.3rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.description p {
+  text-align: left;
 }
 
 #projects-1 h3 {
@@ -1190,3 +1203,60 @@ h3 a:hover {
   content: '자세히 보기';
 }
  */
+
+
+/* 
+.github-1,
+.tistory-1 {
+  min-width: 40%;
+} */
+/* 미디어 쿼리: 화면 너비가 1440px 이상일 때 */
+@media (min-width: 1700px) {
+/* .content-wrapper 클래스를 가진 요소 내부의 자식 요소들을 가로로 정렬 */
+.content-wrapper {
+  display: flex; /* 요소들을 가로로 배치 */
+  align-items: center; /* 세로 가운데 정렬 */
+  max-width: 2000px; /* 2000px 이하에서 최대 너비 설정 */
+  margin: 0px auto; /* 가운데 정렬을 위한 자동 마진 설정 (밑 여백 포함) */
+  padding: 50px 40px;
+}
+
+.subsection {
+  padding-top: 0;
+}
+
+/* .image-container 클래스에 스타일 적용 */
+.content-wrapper .image-container {
+  flex: 1; /* 공간을 나누어 차지하도록 설정 */
+}
+
+/* .description 클래스에 스타일 적용 */
+.content-wrapper .description {
+  flex: 1; /* 공간을 나누어 차지하도록 설정 */
+}
+
+.description {
+  padding: 0 30px;
+}
+/* .description p {
+  width: 400px;
+} */
+
+  .github-1,
+  .tistory-1 {
+    /* padding: 0 10rem; */
+    width: 40%;
+    max-width: 944px; /* 1008- 16*4*/
+  }
+
+}
+
+@media (min-width: 2000px) {
+  .content-wrapper {
+    padding: 0px 150px;
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
