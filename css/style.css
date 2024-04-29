@@ -468,28 +468,28 @@ footer ul li {
 #Archiving:hover,
 #Projects:hover,
 #Intro:hover {
-  box-shadow: 8px 8px 16px #ffffff71;
+  box-shadow: 8px 8px 16px #ffffff21;
 }
 
 
 #AboutMe {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(80, 0, 0, 0.1);
 }
 
 #Skills {
-  background-color: rgba(255, 166, 0, 0.1);
+  background-color: rgba(80, 50, 0, 0.1);
 }
 
 #Archiving {
-  background-color: rgba(255, 255, 0, 0.1);
+  background-color: rgba(80, 80, 0, 0.1);
 }
 
 #Projects {
-  background-color: rgba(0, 128, 0, 0.1);
+  background-color: rgba(0, 40, 0, 0.1);
 } 
 
 #Intro {
-  background-color: rgba(0, 0, 255, 0.1);
+  background-color: rgba(0, 0, 80, 0.1);
 }
 
 
@@ -1016,6 +1016,9 @@ h3 a:hover {
 
   font-family: "Hahmlet",
   serif;
+
+  opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 0.5s ease;
 }
 
 .bubble:hover {

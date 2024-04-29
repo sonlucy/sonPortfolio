@@ -118,3 +118,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 }); */
+// 모든 .bubble 요소를 선택
+const bubbles = document.querySelectorAll('.bubble');
+
+// Intersection Observer 생성
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+    } else {
+      entry.target.style.opacity = 0;
+    }
+  });
+}, { threshold: 0 }); // 요소가 화면에 나타날때
+
+// 각 .bubble 요소에 Observer 등록
+bubbles.forEach(bubble => {
+  observer.observe(bubble);
+});
