@@ -619,7 +619,7 @@ header img {
   serif;
   font-optical-sizing: auto;
   
-
+  padding-right: 2rem;
 
 }
 .tab-content:hover {
@@ -1272,4 +1272,10 @@ h3 a:hover {
 
 @media (max-width: 1440px) {
 
+}
+
+mark {
+  background-color: #c0c0c0;
+  color: rgb(255, 0, 98);
+  border-radius: 5px;
 }
