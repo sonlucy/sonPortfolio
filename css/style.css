@@ -896,7 +896,7 @@ h3 a:hover {
 .skillsBg-1 {
   width: 40%;
   margin: 0.5rem;
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
   /* max-width: 1000px; */
 }
 @media screen and (max-width: 768px) {
@@ -905,6 +905,19 @@ h3 a:hover {
     padding: 1rem 0.5rem;
 
     /* 화면이 768px 이하일 때, 각 섹션의 너비를 조정 */
+  }
+}
+
+@media (min-width: 1440px) {
+  #SkillsContent {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skillsBg-0 {
+    width: 40%;
+    padding: 1rem 0.5rem;
+
   }
 }
 
