@@ -887,6 +887,14 @@ h3 a:hover {
 
 }
 
+.skillsBg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .skillsBg-0 {
   width: 80%;
   margin: 0.5rem;
@@ -896,15 +904,13 @@ h3 a:hover {
 .skillsBg-1 {
   width: 40%;
   margin: 0.5rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0rem;
   /* max-width: 1000px; */
 }
 @media screen and (max-width: 768px) {
   .skillsBg-1 {
     width: 80%;
     padding: 1rem 0.5rem;
-
-    /* 화면이 768px 이하일 때, 각 섹션의 너비를 조정 */
   }
 }
 
@@ -917,7 +923,23 @@ h3 a:hover {
   .skillsBg-0 {
     width: 40%;
     padding: 1rem 0.5rem;
+  }
 
+  .skillsBg-1 {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  #SkillsContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .skillsBg-0,
+  .skillsBg-1 {
+    width: 20%;
   }
 }
 
@@ -1046,7 +1068,8 @@ h3 a:hover {
   width: 40rem;
 /*   float: left; */
   margin-right: 20px;
-  margin: 1rem;
+  /* margin: 1rem; */
+  margin: 0 auto;
   border-radius: 5px;
 }
 
@@ -1054,6 +1077,14 @@ h3 a:hover {
   padding: 1rem;
   margin: 2rem 15rem;
 
+}
+
+.content-wrapper {
+
+  margin: 1rem auto;
+  padding: 1rem 0;
+  background-color: #e0eff17c;
+  border-radius: 1rem;
 }
 
 .description {
@@ -1192,7 +1223,7 @@ h3 a:hover {
   
   .description {
     padding: 0 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1236,29 +1267,33 @@ h3 a:hover {
 .tistory-1 {
   min-width: 40%;
 } */
-/* 미디어 쿼리: 화면 너비가 1440px 이상일 때 */
+
+@media (min-width: 1024px) {
+  .content-wrapper {
+    width: 90%;
+    padding: 1rem;
+  }
+}
 @media (min-width: 1700px) {
 /* .content-wrapper 클래스를 가진 요소 내부의 자식 요소들을 가로로 정렬 */
 .content-wrapper {
   display: flex; /* 요소들을 가로로 배치 */
   align-items: center; /* 세로 가운데 정렬 */
   max-width: 2000px; /* 2000px 이하에서 최대 너비 설정 */
-  margin: 0px auto; /* 가운데 정렬을 위한 자동 마진 설정 (밑 여백 포함) */
-  padding: 50px 40px;
+  /* margin: 0px auto; */
+  /* padding: 50px 40px; */
 }
 
 .subsection {
   padding-top: 0;
 }
 
-/* .image-container 클래스에 스타일 적용 */
 .content-wrapper .image-container {
-  flex: 1; /* 공간을 나누어 차지하도록 설정 */
+  flex: 1; 
 }
 
-/* .description 클래스에 스타일 적용 */
 .content-wrapper .description {
-  flex: 1; /* 공간을 나누어 차지하도록 설정 */
+  flex: 1; 
 }
 
 .description {
@@ -1279,7 +1314,8 @@ h3 a:hover {
 
 @media (min-width: 2000px) {
   .content-wrapper {
-    padding: 0px 150px;
+    /* padding: 0px 150px; */
+    max-width: 1500px;
   }
 }
 
